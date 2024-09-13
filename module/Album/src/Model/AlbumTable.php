@@ -47,7 +47,7 @@ class AlbumTable{
             throw new RuntimeException(sptintf('Cannot update album with identifier %d as it does not exist', $id));
         }
 
-        $this ->tableGateway->update($date, ['id'=> (int) $id]);
+        $this->tableGateway->update($data, ['id' => $id]);
 
     }
 
